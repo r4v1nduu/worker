@@ -1,0 +1,23 @@
+{
+  "name": "data-sync-worker",
+  "version": "1.0.0",
+  "description": "MongoDB to Elasticsearch sync worker",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "nodemon --exec ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.11.0",
+    "mongodb": "^6.18.0",
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.1.9"
+  }
+}
